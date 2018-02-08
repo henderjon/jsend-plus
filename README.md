@@ -124,4 +124,4 @@ The JSend specification (this page) is covered under a [modified BSD License](ht
 
 ## Original
 
-[labs.omniti.com/labs/jsend](https://labs.omniti.com/labs/jsend)
+This [page](https://labs.omniti.com/labs/jsend) was converted using [this tool](https://www.browserling.com/tools/html-to-markdown) plus some elbow grease.
