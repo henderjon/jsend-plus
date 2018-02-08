@@ -122,6 +122,8 @@ So where does that leave us? Accounting for deficiencies in the status quo does 
 
 The JSend specification (this page) is covered under a [modified BSD License](https://labs.omniti.com/labs/jsend/wiki/License)
 
+-----
+
 ## Original
 
 This [page](https://labs.omniti.com/labs/jsend) was converted using [this tool](https://www.browserling.com/tools/html-to-markdown) plus some elbow grease.
