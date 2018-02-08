@@ -25,61 +25,11 @@ A basic JSend-compliant response is as simple as this:
 
 When setting up a JSON API, you'll have all kinds of different types of calls and responses. JSend separates responses into some basic types, and defines required and optional keys for each type:
 
-<table class="wiki">
-
-<tbody>
-
-<tr>
-
-<td>**Type**</td>
-
-<td>**Description**</td>
-
-<td>**Required Keys**</td>
-
-<td>**Optional Keys**</td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>All went well, and (usually) some data was returned.</td>
-
-<td>status, data</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>There was a problem with the data submitted, or some pre-condition of the API call wasn't satisfied</td>
-
-<td>status, data</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>error</td>
-
-<td>An error occurred in processing the request, i.e. an exception was thrown</td>
-
-<td>status, message</td>
-
-<td>code, data</td>
-
-</tr>
-
-</tbody>
-
-</table>
+| Type     | Required Keys   | Optional Keys | Description                                                                                         |
+|----------|-----------------|---------------|:----------------------------------------------------------------------------------------------------|
+| success  | status, data    |               | All went well, and (usually) some data was returned.                                                |
+| fail     | status, data    |               | There was a problem with the data submitted, or some pre-condition of the API call wasn't satisfied |
+| error    | status, message | code, data    | An error occurred in processing the request, i.e. an exception was thrown                           |
 
 ## Example response types
 
