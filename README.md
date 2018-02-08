@@ -2,7 +2,7 @@
 
 *   **What?** - Put simply, JSend is a specification that lays down some rules for how [<span class="icon">JSON</span>](http://json.org) responses from web servers should be formatted. JSend focuses on application-level (as opposed to protocol- or transport-level) messaging which makes it ideal for use in [<span class="icon">REST</span>](http://en.wikipedia.org/wiki/Representational_State_Transfer)-style applications and APIs.
 
-*   **Why?** - There are lots of web services out there providing JSON data, and each has its own way of formatting responses. Also, developers writing for [JavaScript?](/labs/jsend/wiki/JavaScript) front-ends continually re-invent the wheel on communicating data from their servers. While there are many common patterns for structuring this data, there is no consistency in things like naming or types of responses. Also, this helps promote happiness and unity between backend developers and frontend designers, as everyone can come to expect a common approach to interacting with one another.
+*   **Why?** - There are lots of web services out there providing JSON data, and each has its own way of formatting responses. Also, developers writing for [JavaScript?](https://labs.omniti.com/labs/jsend/wiki/JavaScript) front-ends continually re-invent the wheel on communicating data from their servers. While there are many common patterns for structuring this data, there is no consistency in things like naming or types of responses. Also, this helps promote happiness and unity between backend developers and frontend designers, as everyone can come to expect a common approach to interacting with one another.
 
 *   **Hold on now, aren't there already specs for this kind of thing?** - Well... no. While there are a few handy specifications for dealing with JSON data, most notably [<span class="icon">Douglas Crockford</span>](http://www.crockford.com/)'s [<span class="icon">JSONRequest</span>](http://www.json.org/JSONRequest.html) proposal, there's nothing to address the problems of general application-level messaging. More on this later.
 
@@ -158,13 +158,13 @@ Optional keys:
 But wait, you ask, doesn't HTTP already provide a way to communicate response statuses? Why yes, astute reader, it does. So how does the notion of indicating response status in the message body fit within the context of HTTP? Two things:
 
 *   The official HTTP spec has 41 status codes, and there are many interpretations on how to use each one. JSend, on the other hand, defines a more constrained set of status codes, specifically related to handling JSON traffic in the context of a dynamic web UI.
-*   The spec is meant to be as small, constrained, and generally-applicable as possible. As such, it has to be somewhat self-contained. A common pattern for implementing JSON services is to load a [JavaScript?](/labs/jsend/wiki/JavaScript) file which passes a JSON block into a user-specified callback. JSON-over-XHR handling in many [JavaScript?](/labs/jsend/wiki/JavaScript) frameworks follows similar patterns. As such, the end-user (developer) never has a chance to access the HTTP response itself.
+*   The spec is meant to be as small, constrained, and generally-applicable as possible. As such, it has to be somewhat self-contained. A common pattern for implementing JSON services is to load a [JavaScript?](https://labs.omniti.com/labs/jsend/wiki/JavaScript) file which passes a JSON block into a user-specified callback. JSON-over-XHR handling in many [JavaScript?](https://labs.omniti.com/labs/jsend/wiki/JavaScript) frameworks follows similar patterns. As such, the end-user (developer) never has a chance to access the HTTP response itself.
 
 So where does that leave us? Accounting for deficiencies in the status quo does not negate the usefulness of HTTP compliance. Therefore it is advised that server-side developers use both: provide a JSend response body, and whatever HTTP header(s) are most appropriate to the corresponding body.
 
 ## License
 
-The JSend specification (this page) is covered under a [modified BSD License](/labs/jsend/wiki/License)
+The JSend specification (this page) is covered under a [modified BSD License](https://labs.omniti.com/labs/jsend/wiki/License)
 
 ## Original
 
